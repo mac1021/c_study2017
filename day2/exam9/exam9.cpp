@@ -161,6 +161,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			SelectObject(hdc, oldBrush);
 			DeleteObject(myBrush);
 
+			SelectObject(hdc, oldPen);
+			DeleteObject(nullPen);
+
 
 			myBrush = (HBRUSH)GetStockObject(NULL_BRUSH);
 			oldBrush = (HBRUSH)SelectObject(hdc, myBrush);
