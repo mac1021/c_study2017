@@ -158,7 +158,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 			//-------------------------------------------------------------------
 
-			myBrush = (HBRUSH)CreateSolidBrush(RGB(0, 0, 255));
+			myBrush = (HBRUSH)CreateSolidBrush(RGB(0, 0, 255 ));
 			oldBrush = (HBRUSH)SelectObject(hdc, myBrush);
 			
 			Ellipse(hdc, 300, 100, 400, 200);
